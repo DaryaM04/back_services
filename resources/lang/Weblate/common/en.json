@@ -1,0 +1,120 @@
+{
+    "guild": "Builders Guild",
+    "actions": "Actions",
+    "address": "Address",
+    "city": "City",
+    "yes": "Yes",
+    "fileTypeError": "Please choose the correct file format: JPEG, PNG, GIF, TIFF, SVG, WebP",
+    "alert": {
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "confirmDelete": "Confirm delete",
+        "AreYouSure": "Do you really want to delete"
+    },
+    "action": {
+        "save": "Save",
+        "delete": "Delete",
+        "send": "Send",
+        "cancel": "Cancel",
+        "back": "Back"
+    },
+    "select": "Select...",
+    "menu": {
+        "profile": "Profile",
+        "admin": "Administrator",
+        "logout": "Logout"
+    },
+    "state": {
+        "active": "Active",
+        "inactive": "Inactive"
+    },
+    "userStatus": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "blocked": "Blocked"
+    },
+    "search": "Search",
+    "active": "Active",
+    "show": "Show",
+    "elements": {
+        "plural_zero": "Show {{count}} elements",
+        "plural_one": "Show {{count}} element",
+        "plural_two": "Show {{count}} elements",
+        "plural_few": "Show {{count}} elements",
+        "plural_many": "Show {{count}} elements",
+        "plural_other": "Show {{count}} elements"
+    },
+    "user_type": {
+        "private": "Private person",
+        "company": "Company"
+    },
+    "private_props": {
+        "name": "Name",
+        "firstname": "First name",
+        "lastname": "Last name",
+        "fullName": "Surname and name"
+    },
+    "company_props": {
+        "name": "Company name"
+    },
+    "image_props": {
+        "upload_file": "Upload file",
+        "orDND": "or drag and drop",
+        "domain": "PNG, JPG, GIF up to 10MB"
+    },
+    "bool": {
+        "true": "True",
+        "false": "False"
+    },
+    "profileTypes": {
+        "user": "User",
+        "company": "Company"
+    },
+    "userTypes": {
+        "user": "User",
+        "admin": "Admin"
+    },
+    "video_props": {
+        "upload_file": "Upload file",
+        "orDND": "or drag and drop",
+        "domain": "MP4, WEBM, AVI, MOV up to 50MB"
+    },
+    "success": "Success",
+    "error": "Error",
+  "language": {
+    "en": "English",
+    "ru": "Russian",
+    "he": "Hebrew",
+    "ar": "Arabic"
+  },
+  "languages": "Languages",
+  "calendar": {
+    "year" : "Year",
+    "month": "Month",
+    "hour" : "hour",
+    "hint" : "You need to indicate the days or intervals of days when you are busy",
+    "title" : "Always free",
+    "from" : "From",
+    "until" : "Until",
+    "error" : "Enter a valid interval",
+    "interval" : "Specify the interval"
+  },
+  "m2" : "m",
+  "2" : "2",
+  "chooseClosestCity": "If you didn't find your city or district in the list, then specify the nearest one",
+  "phone": "Phone",
+    "worksheet": {
+        "editWorksheet": "Edit worksheet",
+        "languages": "Languages",
+        "cityDistrict": "City/District",
+        "image": "Image",
+        "hasBrigadge": "Has Brigadge",
+        "cityWork": "City/District for work",
+        "hide": "Hide worksheet",
+        "calendar": "Calendar",
+        "deleteProfile": "Delete profile",
+        "imageHint": "You need to upload a close-up photo of your face. The face should be in the center, in good quality, with no strangers nearby.",
+        "hideHint": "Your profile will be hidden from a potential employer"
+    },
+  "inactive": "Inactive"
+}

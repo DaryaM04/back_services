@@ -1,0 +1,118 @@
+{
+  "profile": {
+    "Profile": "ملف تعريف",
+    "questionnaire_title": "استبيان",
+    "questionnaire_subtitle": "الجزء العام من الملف الشخصي المرئي لجميع مستخدمي الموقع",
+    "passport_title": "بيانات جواز السفر",
+    "passport_subtitle": "معلومات جواز السفر حتى يثق بك المستخدمون. لن يرى أحد تفاصيل جواز سفرك",
+    "preview_title": "رأي الجمهور في الاستبيان",
+    "preview_subtitle": "يمكنك عرض العرض العام لملفك الشخصي",
+    "passport_state": {
+      "approved": "مصدق",
+      "declined": "انخفض",
+      "submitted": "عند التفتيش"
+    }
+  },
+  "passport": {
+    "user": {
+      "upload_image": "تحميل صورة جواز السفر",
+      "upload_video": "تحميل فيديو جواز السفر",
+      "image_info": "تحتاج إلى إرفاق صورة للصفحة الرئيسية لجواز سفرك.",
+      "video_info": "تحتاج إلى تسجيل مقطع فيديو بجواز سفرك. وجهك وبجانبه الصفحة الرئيسية المفتوحة لجواز السفر. يجب ألا تقل مدة الفيديو عن 5 ثوان."
+    },
+    "title": "إنشاء طلب لتأكيد بيانات جواز السفر",
+    "company": {
+      "company_info": "المعلومات الضريبية عن الشركة",
+      "company_info_placeholder": "أدخل الرقم الضريبي للشركة",
+      "founder_name": "الاسم الكامل للمؤسس",
+      "founder_id": "هوية جواز سفر المؤسس"
+    }
+  },
+  "menu": {
+    "employee": "موظف",
+    "employer": "مستخدم",
+    "blacklist": "القائمة السوداء",
+    "userProfile": "ملف تعريف",
+    "rates": "معدلات",
+    "myContracts": "عقودي",
+    "projectSearch": "البحث عن المشاريع",
+    "servicesAndWorkingConditions": "الخدمات وشروط الدفع",
+    "portfolio": "محفظة العمل",
+    "employeeSearch": "البحث عن موظفين",
+    "myProjects": "مشاريعي"
+  },
+  "guild": "بناء النقابة",
+  "services": {
+    "title": "الخدمات وشروط الدفع",
+    "edit": {
+      "chooseService": "اختر خدمة",
+      "workExp": "خبرة في العمل",
+      "paymentAmount": {
+        "title": "نوع ومبلغ الدفع",
+        "byAgreement": "بالاتفاق",
+        "hourlyPayment": "الدفع بالساعة",
+        "paymentByVolume": "الدفع حسب حجم العمل"
+      },
+      "activity": "نشاط",
+      "creating": "إنشاء الخدمات وشروط الدفع",
+      "editing": "خدمات التحرير وشروط الدفع",
+      "serviceName": "اسم الخدمة",
+      "noOptions": "لا توجد خيارات"
+    }
+  },
+  "projects": {
+    "title": "مشاريعي",
+    "published": "نشر",
+    "deadline": "موعد نهائي",
+    "responses": "الاستجابات",
+    "edit": "تحرير المشروع",
+    "delete": "حذف المشروع",
+    "form": {
+      "create_title": "إنشاء مشروع",
+      "edit_title": "تحرير المشروع",
+      "name": "اسم المشروع",
+      "name_placeholder": "أدخل اسم المشروع",
+      "description": "وصف المشروع",
+      "description_placeholder": "وصف التعقيدات والفروق الدقيقة في المشروع",
+      "description_length_constraint": "حتى 250 حرفا",
+      "address": "عنوان الكائن",
+      "address_placeholder": "حدد العنوان الذي يوجد به الكائن",
+      "type": "أنواع المشاريع",
+      "type_values": {
+        "service": "حسب الخدمات",
+        "complex": "معقد",
+        "permanent": "مطلوب للعمل الدائم"
+      },
+      "type_hint": {
+        "service": "حسب الخدمة - نوع المشروع الذي يتطلب عمالا لكل خدمة فردية.",
+        "complex": "مجمع - نوع من المشاريع يتطلب مقاولا واحدا لأداء جميع الخدمات والعمل في المشروع.",
+        "permanent": "مطلوب للعمل الدائم - نوع من المشاريع التي تتطلب العمال للعمل الدائم في خدمة معينة."
+      },
+      "period": "مدة المشروع",
+      "period_from": "من",
+      "period_to": "ل",
+      "services": "خدمات",
+      "select_services": "اختر خدمة...",
+      "photo": "صورة للمشروع",
+      "add_service": "إضافة خدمة",
+      "payment_type": "نوع ومبلغ الدفع"
+    }
+  },
+  "portfolio": {
+    "create": "إنشاء محفظة",
+    "edit": "تحرير المحفظة",
+    "description": "وصف العمل",
+    "image": "صورة من العمل",
+    "name": "اسم الخدمة",
+    "price": "سعر العمل",
+    "max": "250 حرفا كحد أقصى",
+    "Portfolio": "مجموعة الأعمال",
+    "caution": {
+      "header": "اهتمام!",
+      "text": "تم الوصول إلى الحد الأقصى لإنشاء الأعمال في المحفظة. يمكنك إنشاء ما يصل إلى 10 أعمال."
+    },
+    "advice": {
+      "header": "يمكنك إنشاء ما يصل إلى 10 أعمال في محفظتك."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "guild": "Builders Guild",
+  "Phone": "Phone",
+  "Password": "Password",
+  "LogIn": "Log in",
+  "YouDoNotHaveAnAccount": "You do not have an account?",
+  "Registration": "Register",
+  "ForgotYourPassword": "Forgot your password?",
+  "RepeatPassword": "Repeat password",
+  "Confirm Password": "Confirm Password",
+  "I agree to the processing of personal data": "I agree to the processing of personal data",
+  "AlreadyRegistered?": "Already registered?",
+  "RememberMe": "Remember me",
+  "DoYouAlreadyHaveAnAccount": "Do you already have an account?",
+  "NumberConfirmation": "Number confirmation",
+  "CodeSent": "Code sent to number",
+  "SendSMS": "Send verify code",
+  "ChangePhoneNumber": "Change phone number",
+  "SendRepeatSms": "Send repeat sms via ",
+  "ConfirmCode": "Confirm Code",
+  "Recovery": "Password recovery",
+  "SavePassword": "Save password",
+  "SendCodeAgain": "Send code again",
+  "EnterACode": "Enter a code",
+  "RequestCode": "Request code",
+  "DetailedInformation": "Detailed information",
+  "ChooseAnAccountType": "Choose an account type ",
+  "Language": "Language",
+  "ProfilePhoto": "Profile photo",
+  "Brigade": "Brigade",
+  "HasBrigade": "Has brigade?",
+  "ServiceCategories": "Service categories ",
+  "EnterCodeFromSMS": "Enter code from SMS",
+  "Register": "Register",
+  "language": {
+    "en": "English",
+    "ru": "Russian",
+    "he": "Hebrew",
+    "ar": "Arabic"
+  },
+  "languages": "Languages",
+  "Continue": "Continue",
+  "city": "City",
+  "select": "Select...",
+  "user_type": {
+    "private": "Private person",
+    "company": "Company"
+  },
+  "private_props": {
+    "firstname": "Firstname",
+    "lastname": "Lastname"
+  },
+  "company_props": {
+    "name": "Company name"
+  },
+  "registration": {
+    "YouVerifiedPhone": "You have verified the phone number",
+    "chooseClosestCity": "If you didn't find your city or district in the list, then specify the nearest one"
+  }
+}

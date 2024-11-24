@@ -1,0 +1,167 @@
+{
+    "user": {
+        "title": "Users",
+        "edit": "Edit user",
+        "create": "Create user",
+        "delete": "Delete user",
+        "add": "Add user",
+        "name": "Name",
+        "role": "Role",
+        "company_name": "Company name",
+        "profileType": "Profile type",
+        "cantChangeProfileType": "You can't change profile type after creation",
+        "isVerified": "Is verified",
+        "first_name": "First name",
+        "last_name": "Last name",
+        "language": "Language",
+        "phone": "Phone number",
+        "email": "Email",
+        "locale": "Locale",
+        "admin": "Admin",
+        "password": "Password",
+        "repeatPassword": "Password again",
+        "image": "Profile photo",
+        "has_brigade": "Has brigade?",
+        "administrator": "Admin",
+        "enterName": "Enter a name",
+        "uploadFile": "Upload file",
+        "orDragAndDrop": "or Drag&Drop",
+        "imageProps": "JPG up to 5 MB",
+        "verified": {
+            "true": "Verified",
+            "false": "Not verified",
+            "await": "Unchecked"
+        },
+        "is_verified": "Passport verification",
+        "City": "City",
+        "ServiceCategories": "Service categories"
+    },
+    "filter": "Filter",
+    "services": {
+        "title": "Services",
+        "add": "Add service",
+        "delete": "Delete service",
+        "create": "Create service",
+        "edit": "Edit service",
+        "field_name": "Service name",
+        "name": "Service name in english",
+        "name_ru": "Service name in russian",
+        "name_he": "Service name in hebrew",
+        "name_ar": "Service name in arabic",
+        "parent": "Parent category",
+        "enterName": "Enter a name",
+        "selectService": "Select a service"
+    },
+    "reviewTypesEnterType": "Enter type of review",
+    "actions": {
+        "title": "Actions",
+        "cancel": "Cancel",
+        "save": "Save",
+        "confirm": "Confirm",
+        "approve": "Approve",
+        "notApprove": "Not approve"
+    },
+    "common": {
+        "save": "Save",
+        "delete": "Delete"
+    },
+    "dashboard": "Dashboard page!",
+    "guild": "Builders Guild",
+    "menu": {
+        "dashboard": "Dashboard",
+        "cities": "Cities and districts",
+        "users": "Users",
+        "services": "Services",
+        "review": "Reviews",
+        "review-type": "Review Types",
+        "approve": "Approve passport"
+    },
+    "cities": {
+        "title": "Cities and districts",
+        "add": "Add city or district",
+        "field_name": "Name",
+        "name": "City or district name in english",
+        "name_ru": "City or district name in russian",
+        "name_he": "City or district name in hebrew",
+        "name_ar": "City or district name in arabic",
+        "edit": "Update city or district",
+        "delete": "Delete city or district",
+        "enterName": "Enter name"
+    },
+    "reviews": {
+        "title": "Reviews",
+        "add": "Add review"
+    },
+    "table": {
+        "actions": "Actions",
+        "active": "Active"
+    },
+    "reviewTypes": {
+        "title": "Review types",
+        "values": "Values for review",
+        "specifyProfileType": "Specify the type of user for whom this type of review will be displayed",
+        "headers": {
+            "name": "Review type name",
+            "profile_type": "Profile type",
+            "type": "Type"
+        },
+        "name": "Review type name in english",
+        "name_ru": "Review type name in russian",
+        "name_he": "Review type name in hebrew",
+        "name_ar": "Review type name in arabic",
+        "value_placeholder": {
+            "value": "Value name in english",
+            "value_ru": "Value name in russian",
+            "value_he": "Value name in hebrew",
+            "value_ar": "Value name in arabic"
+        },
+        "add": "Add review type",
+        "edit": "Edit review type",
+        "delete": "Delete review type",
+        "enterName": "Enter name",
+        "profile_type": {
+            "user": "User",
+            "company": "Company",
+            "lawyer": "Lawyer"
+        },
+        "type": {
+            "common": "For user profile",
+            "service": "For service"
+        }
+    },
+    "passport": {
+        "title": "Passports",
+        "approve": {
+            "comment": "Comment for passport validation",
+            "youCanLeaveComment": "Comment"
+        },
+        "company": {
+            "create": "Add company passport",
+            "edit": "Edit company passport",
+            "name": "Company name",
+            "info": "Company tax info",
+            "founder_name": "Founder name",
+            "founder_id": "Founder id",
+            "approve_title": "Approve company passport"
+        },
+        "user": {
+            "create": "Add user passport",
+            "edit": "Edit user passport",
+            "user_id": "User system id",
+            "name": "Full name",
+            "uploadImage": "Passport image",
+            "uploadVideo": "Passport video",
+            "approve_title": "Approve user passport",
+            "provided_image": "Provided passport image",
+            "provided_video": "Provided passport video",
+            "image_not_provided": "Passport image not provided",
+            "video_not_provided": "Passport video not provided"
+        },
+        "tooltip": {
+            "approve": "Approve passport",
+            "edit": "Edit passport",
+            "delete": "Delete passport",
+            "details": "More details"
+        }
+    }
+}

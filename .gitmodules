@@ -1,0 +1,3 @@
+[submodule "weblate-docker"]
+	path = weblate-docker
+	url = https://github.com/WeblateOrg/docker-compose.git

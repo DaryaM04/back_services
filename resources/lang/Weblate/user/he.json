@@ -1,0 +1,118 @@
+{
+  "profile": {
+    "Profile": "פרופיל",
+    "questionnaire_title": "שאלון",
+    "questionnaire_subtitle": "החלק הציבורי של הפרופיל הגלוי לכל משתמשי האתר",
+    "passport_title": "נתוני דרכון",
+    "passport_subtitle": "פרטי דרכון כך שמשתמשים יסמכו עליך. אף אחד לא יראה את פרטי הדרכון שלך",
+    "preview_title": "מבט ציבורי על השאלון",
+    "preview_subtitle": "באפשרותך להציג את התצוגה הציבורית של הפרופיל שלך",
+    "passport_state": {
+      "approved": "מאושר",
+      "declined": "שנדחה",
+      "submitted": "בבדיקה"
+    }
+  },
+  "passport": {
+    "user": {
+      "upload_image": "העלה תמונת פספורט",
+      "upload_video": "העלה סרטון פספורט",
+      "image_info": "עליך לצרף תמונה של הדף הראשי של הדרכון שלך.",
+      "video_info": "אתה צריך להקליט וידאו עם הדרכון שלך. הפנים שלך ולידו הדף הראשי הפתוח של הדרכון. משך הסרטון חייב להיות לפחות 5 שניות."
+    },
+    "title": "יצירת בקשה לאישור נתוני דרכון",
+    "company": {
+      "company_info": "מידע מס על החברה",
+      "company_info_placeholder": "הזן את מספר המס של החברה",
+      "founder_name": "שם מלא של המייסד",
+      "founder_id": "תעודת זהות של דרכון המייסד"
+    }
+  },
+  "menu": {
+    "employee": "עובד",
+    "employer": "מעסיק",
+    "blacklist": "רשימה שחורה",
+    "userProfile": "פרופיל",
+    "rates": "מחירים",
+    "myContracts": "החוזים שלי",
+    "projectSearch": "חיפוש פרויקטים",
+    "servicesAndWorkingConditions": "שירותים ותנאי תשלום",
+    "portfolio": "תיק עבודות",
+    "employeeSearch": "חיפוש עובדים",
+    "myProjects": "הפרויקטים שלי"
+  },
+  "guild": "לבנות גילדה",
+  "services": {
+    "title": "שירותים ותנאי תשלום",
+    "edit": {
+      "chooseService": "בחר שירות",
+      "workExp": "ניסיון תעסוקתי",
+      "paymentAmount": {
+        "title": "סוג וסכום התשלום",
+        "byAgreement": "בהסכם",
+        "hourlyPayment": "תשלום לפי שעה",
+        "paymentByVolume": "תשלום לפי נפח עבודה"
+      },
+      "activity": "פעילות",
+      "creating": "יצירת שירותים ותנאי תשלום",
+      "editing": "שירותי עריכה ותנאי תשלום",
+      "serviceName": "שם השירות",
+      "noOptions": "אין אפשרויות"
+    }
+  },
+  "projects": {
+    "title": "הפרויקטים שלי",
+    "published": "פורסם",
+    "deadline": "היעד",
+    "responses": "תגובות",
+    "edit": "עריכת פרויקט",
+    "delete": "מחיקת פרוייקט",
+    "form": {
+      "create_title": "יצירת פרוייקט",
+      "edit_title": "עריכת פרויקט",
+      "name": "שם הפרויקט",
+      "name_placeholder": "הזן את שם הפרויקט",
+      "description": "תיאור הפרויקט",
+      "description_placeholder": "תאר את המורכבויות והניואנסים של הפרויקט",
+      "description_length_constraint": "עד 250 תווים",
+      "address": "כתובת האובייקט",
+      "address_placeholder": "בחר את הכתובת שבה ממוקם האובייקט",
+      "type": "סוגי פרויקטים",
+      "type_values": {
+        "service": "לפי שירותים",
+        "complex": "מורכב",
+        "permanent": "נדרש לעבודה קבועה"
+      },
+      "type_hint": {
+        "service": "לפי שירות - סוג הפרויקט הדורש עובדים עבור כל שירות בודד.",
+        "complex": "מורכב - סוג של פרויקט הדורש קבלן אחד לבצע את כל השירותים ולעבוד על הפרויקט.",
+        "permanent": "נדרש לעבודה קבועה - סוג של פרויקט הדורש עובדים לעבודה קבועה על שירות מסוים."
+      },
+      "period": "תקופת הפרויקט",
+      "period_from": "מ",
+      "period_to": "ל",
+      "services": "שירותים",
+      "select_services": "בחר שירות...",
+      "photo": "תמונת הפרויקט",
+      "add_service": "הוסף שירות",
+      "payment_type": "סוג וסכום התשלום"
+    }
+  },
+  "portfolio": {
+    "create": "יצירת תיק עבודות",
+    "edit": "עריכת תיק עבודות",
+    "max": "מקסימום 250 תווים",
+    "description": "תיאור העבודה",
+    "image": "תמונה של העבודה",
+    "price": "מחיר העבודה",
+    "name": "שם השירות",
+    "Portfolio": "תיק עבודות",
+    "caution": {
+      "header": "תשומת לב!",
+      "text": "הגבול ליצירת עבודות בתיק הושג. ניתן ליצור עד 10 יצירות."
+    },
+    "advice": {
+      "header": "אתה יכול ליצור עד 10 עבודות בתיק העבודות שלך."
+    }
+  }
+}

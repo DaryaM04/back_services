@@ -1,0 +1,339 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.fb-bg {
+    background-image: radial-gradient(#E5E7EB 10%, transparent 10%),
+    radial-gradient(#E5E7EB 10%, transparent 10%);
+    background-position: 0 0, 16px 16px;
+    background-size: 32px 32px;
+    background-color: transparent;
+}
+
+.resizer {
+    display: inline-block;
+    background: rgb(209 213 219 / var(--tw-text-opacity));;
+    width:1px;
+    height: 50%;
+    position: absolute;
+    inset-inline-end: 0;
+    /*right: 0;*/
+    top: 25%;
+    /* transform: translateX(50%); */
+    z-index: 1;
+    /* padding: 0 1px 0 1px; */
+}
+#search::-webkit-search-decoration,
+#search::-webkit-search-cancel-button,
+#search::-webkit-search-results-button,
+#search::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+
+.ce-block__content {
+    /*max-width: 850px;*/
+    max-width: unset;
+}
+
+.ce-toolbar__content {
+    max-width: 850px;
+}
+
+.detailed-lesson-editor .ce-block__content, .detailed-lesson-editor .ce-toolbar__content {
+    max-width: none;
+    padding: 0 30px
+}
+
+.detailed-lesson-editor .ce-toolbar__content {
+    left: 15px ;
+}
+
+.detailed-lesson-editor .ce-toolbar__actions {
+    right: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .detailed-lesson-editor .ce-toolbar__content {
+        left: 0;
+    }
+    .detailed-lesson-editor .ce-toolbar__actions {
+        right: auto;
+    }
+}
+
+.prices-background {
+    background: linear-gradient(#111827 70%, #FFFFFF 30%);
+}
+
+.xs\:prices-background {
+    background: linear-gradient(#111827 80%, #FFFFFF 20%);
+}
+.alert-enter {
+    opacity: 0;
+}
+.alert-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+.alert-exit {
+    opacity: 1;
+}
+.alert-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+.detail-editor .codex-editor__redactor {
+    padding-bottom:0 !important;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    width: max-content;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    inset-inline-start: 0;
+    /*transform: translateX(-50%); // moved to component tw className */
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+/* Tooltip color */
+.tooltip .tooltip-black {
+    background-color: #555;
+    color: #fff;
+}
+.tooltip .tooltip-white {
+    background-color: #fff;
+    color: #555;
+    border: 1px #e5e7eb solid;
+}
+.tooltip-cp .tooltip-white {
+    width: 210px;
+    box-shadow: 0 3px 6px 1px #ababab;
+    text-align: left;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext, .tooltip:active .tooltiptext  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip.white {
+    display: flex;
+    width: fit-content;
+    justify-content: flex-start;
+}
+.tooltip.white .tooltiptext  {
+    background: white;
+    width: fit-content;
+    /* font-size: 10px; */
+    text-align: left;
+    padding: 10px;
+    max-width: 212px;
+    transform: unset;
+    inset-inline-end: -200%;
+    color: #727984;
+    inset-inline-start: 100%;
+    border: 1px solid #ECECED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-weight: 400;
+}
+.tooltip.white .tooltiptext::after {
+    content: '';
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .tooltip.white .tooltiptext  {
+    left: 29%;
+  }
+  }
+/*.prose {*/
+/*    max-width: unset;*/
+/*}*/
+
+.cp-right-box-shadow {
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+/* Chrome Edge Opera Safari scroll */
+.cp-scrollbar::-webkit-scrollbar {
+    width: 5px; /* Scroll width */
+}
+.cp-outline-0 {
+    outline-width: 0;
+}
+.cp-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background-color: #a2a2a2; /* Slider Color */
+}
+.cp-scrollbar::-webkit-scrollbar-track {
+    background-color: transparent; /* Scroll Color */
+}
+
+.width-available {
+    max-width: -webkit-fill-available;
+    max-width: stretch;
+    max-width: -moz-available;
+}
+
+.btn-up {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    z-index: 10000;
+}
+
+.btn-up::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up_hide {
+    display: none;
+}
+
+@layer components {
+    .b-payment-title {
+        @apply flex flex-wrap my-[5px] items-center
+        text-black/[.59] text-base font-bold px-[20px] py-[10px] rounded-[6px] w-full bg-[#F3F4F6]
+    }
+    .b-tariff-text {
+        @apply flex flex-col text-black/[.59] leading-5 m-[20px]
+    }
+    .b-tariff-text > div {
+        @apply py-[5px]
+    }
+    .b-cancel-subscription-btn {
+        @apply w-full px-[10px] py-[5px] text-indigo-600 rounded-[7px] border-[1px] border-solid border-indigo-600
+    }
+    .b-order-completed {
+        @apply bg-[#D9D9D9] text-black p-2 text-xs font-normal
+    }
+    .b-more-details-link a {
+        @apply text-[#4F46E5]  text-sm font-normal underline underline-offset-2
+    }
+    .b-order-list {
+        @apply list-inside list-decimal ml-2
+    }
+    .b-cart {
+        @apply w-full border-collapse bg-white mx-[12px]
+    }
+    .b-cart td, .b-cart th {
+        @apply border-b-[0.5px] border-solid border-black/[.4] p-[8px] text-black/[.59]
+    }
+    .b-cart th {
+        @apply pt-[12px] pb-[12px] text-left
+    }
+    .b-cart th:first-child {
+        @apply w-[70%]
+    }
+    .b-cart-wrap {
+        @apply w-full flex flex-col
+    }
+    .b-cart-wrap div:last-child {
+        @apply text-right
+    }
+    .b-back-link {
+        @apply my-[20px]
+    }
+    .b-push {
+        @apply ml-auto
+    }
+    .b-tariff-title {
+        @apply p-[5px] bg-indigo-100 text-center text-indigo-600 font-medium text-lg font-bold rounded-md
+    }
+
+    .b-tariffs-list {
+        @apply flex flex-wrap justify-center gap-[16px]
+    }
+    .b-tariffs-list__item {
+        @apply flex shadow-lg flex-col rounded-[8px] w-full lg:max-w-[286px] bg-white border-[1px] border-solid border-[#E5E7EB]
+    }
+
+    .b-tariffs-list__item > div {
+        @apply p-[25px]
+    }
+    .b-tariffs-list__item > div:first-child {
+        @apply border-b-[1px] border-solid border-[#E5E7EB]
+    }
+    .b-tariff-supporting-text {
+        @apply text-[#6B7280] mt-[16px]
+    }
+    .b-tariff-price {
+        @apply my-[32px]
+    }
+    .b-tariff-price > span:first-child {
+        @apply text-black font-extrabold text-4xl
+    }
+    .b-tariff-price > span:last-child {
+        @apply text-[#6B7280] font-extrabold text-base font-medium
+    }
+    .b-tariff-features-list > li {
+        @apply text-sm
+    }
+    .b-buy-tariff-btn {
+        @apply flex justify-center w-full rounded-md bg-[#1F2937] text-white p-[10px]
+    }
+    .b-buy-tariff-btn_current {
+        @apply bg-white text-[#1F2937]
+    }
+    .b-need-more-users {
+        @apply flex flex-wrap max-w-[1415px] w-full items-center justify-center rounded-lg shadow-lg bg-white my-[25px]
+    }
+
+    .b-need-more-users > div:first-child {
+        @apply xl:text-2xl font-bold p-[48px] w-full  lg:w-3/5 2xl:w-4/5
+    }
+    .b-need-more-users > div:last-child {
+        @apply bg-[#F9FAFB] px-[48px] rounded-r-lg w-full  lg:w-2/5 2xl:w-1/5 lg:h-full h-1/2 flex items-center justify-center
+    }
+    .b-alert-here-link {
+        @apply text-[#B45309] underline underline-offset-2 font-bold
+    }
+    .b-alert-here-link:focus-visible {
+        @apply outline-none
+    }
+}

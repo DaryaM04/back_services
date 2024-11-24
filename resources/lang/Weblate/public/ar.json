@@ -1,0 +1,60 @@
+{
+  "LogIn": "تسجيل الدخول",
+  "YouDoNotHaveAnAccount": "ليس لديك حساب؟",
+  "Registration": "سجل",
+  "ForgotYourPassword": "هل نسيت كلمة المرور؟",
+  "RepeatPassword": "كرر كلمة المرور",
+  "Confirm Password": "تأكيد كلمة المرور",
+  "I agree to the processing of personal data": "أوافق على معالجة البيانات الشخصية",
+  "AlreadyRegistered?": "هل أنت مسجل بالفعل؟",
+  "RememberMe": "تذكرني",
+  "DoYouAlreadyHaveAnAccount": "هل لديك حساب بالفعل؟",
+  "NumberConfirmation": "تأكيد الرقم",
+  "CodeSent": "تم إرسال الرمز إلى الرقم",
+  "SendSMS": "إرسال رمز التحقق",
+  "ChangePhoneNumber": "تغيير رقم الهاتف",
+  "SendRepeatSms": "إرسال رسائل قصيرة متكررة عبر",
+  "ConfirmCode": "تأكيد الرمز",
+  "Recovery": "استعادة كلمة المرور",
+  "SavePassword": "حفظ كلمة المرور",
+  "SendCodeAgain": "إرسال الرمز مرة أخرى",
+  "EnterACode": "أدخل رمزا",
+  "RequestCode": "اطلب رمز",
+  "DetailedInformation": "معلومات مفصلة",
+  "ChooseAnAccountType": "اختر نوع الحساب",
+  "Language": "اللغة",
+  "ProfilePhoto": "صورة الملف الشخصي",
+  "Brigade": "لواء",
+  "HasBrigade": "لديه لواء؟",
+  "ServiceCategories": "فئات الخدمة",
+  "EnterCodeFromSMS": "أدخل الرمز من الرسائل القصيرة",
+  "Register": "سجل",
+  "Phone": "الهاتف",
+  "Password": "شعار",
+  "language": {
+    "en": "الإنكليزية",
+    "ru": "الروسية",
+    "he": "العبرية",
+    "ar": "العربية"
+  },
+  "languages": "اللغات",
+  "Continue": "استمر",
+  "city": "مدينة",
+  "select": "اختار...",
+  "guild": "نقابة البنائين",
+  "user_type": {
+    "private": "شخص عادي",
+    "company": "شركة"
+  },
+  "private_props": {
+    "firstname": "الاسم الأول",
+    "lastname": "اسم العائلة"
+  },
+  "company_props": {
+    "name": "اسم الشركة"
+  },
+  "registration": {
+    "YouVerifiedPhone": "لقد تحققت من رقم الهاتف",
+    "chooseClosestCity": "إذا لم تجد مدينتك أو منطقتك في القائمة ، فحدد أقرب مدينة أو منطقة"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "profile": {
+    "Profile": "Profile",
+    "questionnaire_title": "Questionnaire",
+    "questionnaire_subtitle": "The public part of the profile that is visible to all users of the site",
+    "passport_title": "Passport data",
+    "passport_subtitle": "Passport information so that users trust you. No one will see your passport details",
+    "preview_title": "Public view of the questionnaire",
+    "preview_subtitle": "You can view the public view of your profile",
+    "passport_state": {
+      "approved": "Approved",
+      "declined": "Declined",
+      "submitted": "On inspection"
+    }
+  },
+  "passport": {
+    "title": "Creating an application for confirmation of passport data",
+    "user": {
+      "upload_image": "Upload passport photo",
+      "upload_video": "Upload passport video",
+      "image_info": "You need to attach a photo of the main page of your passport.",
+      "video_info": "You need to record a video with your passport. Your face and next to it the open main page of the passport. The duration of the video must be at least 5 seconds."
+    },
+    "company": {
+      "company_info": "Tax information about the company",
+      "company_info_placeholder": "Enter the company's tax number",
+      "founder_name": "Full name of the founder",
+      "founder_id": "ID of the founder's passport"
+    }
+  },
+  "menu": {
+    "employee": "Employee",
+    "employer": "Employer",
+    "blacklist": "Black list",
+    "userProfile": "Profile",
+    "rates": "Rates",
+    "myContracts": "My contracts",
+    "projectSearch": "Search for projects",
+    "servicesAndWorkingConditions": "Services & Payment Terms",
+    "portfolio": "Work Portfolio",
+    "employeeSearch": "Search for employees",
+    "myProjects": "My projects"
+  },
+  "guild": "Builders Guild",
+  "services": {
+    "title": "Services and payment terms",
+    "edit": {
+      "creating": "Creating services and payment terms",
+      "editing": "Editing services and payment terms",
+      "noOptions": "No options",
+      "chooseService": "Select a service",
+      "serviceName": "Service name",
+      "workExp": "Work experience",
+      "paymentAmount": {
+        "title":"Type and amount of payment",
+        "byAgreement": "By agreement",
+        "hourlyPayment" : "Hourly payment",
+        "paymentByVolume": "Payment by volume of work"
+      },
+      "activity": "Activity"
+    }
+    },
+  "portfolio": {
+    "Portfolio": "Portfolio of works",
+    "caution": {
+      "header": "Attention!",
+      "text": "The limit for creating works in the portfolio has been reached. You can create up to 10 works."
+    },
+    "advice": {
+      "header": "You can create up to 10 works in your portfolio."
+    },
+    "create": "Create Portfolio",
+    "edit": "Edit Portfolio",
+    "description": "Description of work",
+    "image": "Photo of work",
+    "name": "Name of service",
+    "price": "Price of work",
+    "max": "Maximum 250 characters"
+  },
+  "projects": {
+    "title": "My projects",
+    "published": "Published",
+    "deadline": "Deadline",
+    "responses": "responses",
+    "edit": "Edit project",
+    "delete": "Delete project",
+    "form": {
+      "create_title": "Create project",
+      "edit_title": "Edit project",
+      "name": "Name of the project",
+      "name_placeholder": "Enter the name of the project",
+      "description": "Project description",
+      "description_placeholder": "Describe the complexities and nuances of the project",
+      "description_length_constraint": "Up to 250 characters",
+      "address": "Address of the object",
+      "address_placeholder": "Select the address where the object is located",
+      "type": "Project types",
+      "type_values": {
+        "service": "By services",
+        "complex": "Complex",
+        "permanent": "Required for permanent work"
+      },
+      "type_hint": {
+        "service": "By service - the type of project that requires workers for each individual service.",
+        "complex": "Complex - a type of project that requires one contractor to perform all services and work on the project.",
+        "permanent": "Required for permanent work - a type of project that requires workers for permanent work on a specific service."
+      },
+      "period": "Period of the project",
+      "period_from": "From",
+      "period_to": "To",
+      "payment_type": "Type and amount of payment",
+      "services": "Services",
+      "select_services": "Choose a service...",
+      "add_service": "Add service",
+      "photo": "Photo of the project"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "LogIn": "Войти",
+  "Registration": "Регистрация",
+  "ForgotYourPassword": "Забыли пароль?",
+  "AlreadyRegistered?": "Уже зарегистрированы?",
+  "RememberMe": "Запомнить меня",
+  "SendSMS": "Отправить код подтверждения",
+  "Recovery": "Восстановление пароля",
+  "SavePassword": "Сохранить пароль",
+  "Register": "Зарегистрироваться",
+  "RepeatPassword": "Повторите пароль",
+  "Confirm Password": "Подтвердить пароль",
+  "I agree to the processing of personal data": "Я согласен на обработку персональных данных",
+  "YouDoNotHaveAnAccount": "У вас нет учетной записи?",
+  "DoYouAlreadyHaveAnAccount": "У вас уже есть учетная запись?",
+  "NumberConfirmation": "Подтверждение номера",
+  "CodeSent": "Код отправлен на номер",
+  "ChangePhoneNumber": "Сменить номер телефона",
+  "SendRepeatSms": "Отправить повторное смс через ",
+  "SendCodeAgain": "Отправить код повторно",
+  "ConfirmCode": "Подтвердить код",
+  "EnterACode": "Введите код",
+  "RequestCode": "Запрашиваемый код",
+  "DetailedInformation": "Детальная информация",
+  "ChooseAnAccountType": "Выберите тип учетной записи ",
+  "Language": "Язык ",
+  "ProfilePhoto": "Фото профиля",
+  "Brigade": "Бригада",
+  "HasBrigade": "Есть бригада?",
+  "ServiceCategories": "Категории услуг ",
+  "EnterCodeFromSMS": "Введите код из СМС",
+  "Phone": "Телефон",
+  "Password": "Пароль",
+  "language": {
+    "en": "Английский",
+    "ru": "Русский",
+    "he": "Иврит",
+    "ar": "Арабский"
+  },
+  "languages": "Языки",
+  "Continue": "Продолжать",
+  "city": "Город",
+  "select": "Выбирать...",
+  "guild": "Гильдия строителей",
+  "user_type": {
+    "private": "Частное лицо",
+    "company": "Компания"
+  },
+  "private_props": {
+    "firstname": "Имя",
+    "lastname": "Фамилия"
+  },
+  "company_props": {
+    "name": "Название компании"
+  },
+  "registration": {
+    "YouVerifiedPhone": "Вы подтвердили номер телефона",
+    "chooseClosestCity": "Если вы не нашли свой город или район в списке, то укажите ближайший"
+  }
+}

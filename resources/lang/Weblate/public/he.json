@@ -1,0 +1,60 @@
+{
+  "LogIn": "כנס",
+  "YouDoNotHaveAnAccount": "אין לך חשבון?",
+  "Registration": "משלב",
+  "ForgotYourPassword": "שכחת את הסיסמה שלך?",
+  "RepeatPassword": "חזור על הסיסמה",
+  "Confirm Password": "אשר סיסמה",
+  "I agree to the processing of personal data": "אני מסכים לעיבוד נתונים אישיים",
+  "AlreadyRegistered?": "כבר רשום?",
+  "RememberMe": "זכור אותי",
+  "DoYouAlreadyHaveAnAccount": "האם כבר יש לך חשבון?",
+  "NumberConfirmation": "אישור מספר",
+  "CodeSent": "קוד שנשלח למספר",
+  "SendSMS": "שלח קוד אימות",
+  "ChangePhoneNumber": "שינוי מספר טלפון",
+  "SendRepeatSms": "שלח סמס חוזר באמצעות",
+  "ConfirmCode": "אישור קוד",
+  "Recovery": "שחזור סיסמה",
+  "SavePassword": "שמור סיסמה",
+  "SendCodeAgain": "שלח קוד שוב",
+  "EnterACode": "הזן קוד",
+  "RequestCode": "בקש קוד",
+  "DetailedInformation": "מידע מפורט",
+  "ChooseAnAccountType": "בחר סוג חשבון",
+  "Language": "שפה",
+  "ProfilePhoto": "תמונת פרופיל",
+  "Brigade": "חטיבת",
+  "HasBrigade": "יש חטיבה?",
+  "ServiceCategories": "קטגוריות שירות",
+  "EnterCodeFromSMS": "הזן קוד מ- סמס",
+  "Register": "משלב",
+  "Phone": "טלפון",
+  "Password": "סיסמה",
+  "language": {
+    "en": "אנגלית",
+    "ru": "רוסית",
+    "he": "עברית",
+    "ar": "ערבית"
+  },
+  "languages": "שפות",
+  "Continue": "נמשך",
+  "city": "עיר",
+  "select": "בחר...",
+  "guild": "גילדת הבנאים",
+  "user_type": {
+    "private": "אדם פרטי",
+    "company": "חברה"
+  },
+  "private_props": {
+    "firstname": "שם פרטי",
+    "lastname": "שם משפחה"
+  },
+  "company_props": {
+    "name": "שם החברה"
+  },
+  "registration": {
+    "YouVerifiedPhone": "אימתת את מספר הטלפון",
+    "chooseClosestCity": "אם לא מצאת את העיר או המחוז שלך ברשימה, ציין את העיר הקרובה ביותר"
+  }
+}

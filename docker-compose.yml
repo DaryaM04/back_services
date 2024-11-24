@@ -1,0 +1,50 @@
+version: "3.7"
+
+services:
+    app:
+        build:
+            args:
+                user: it-delta
+                uid: 1000
+            context: .
+            dockerfile: docker/app/Dockerfile
+        container_name: guild-app
+        restart: unless-stopped
+        working_dir: /var/www/
+        volumes:
+            - ./:/var/www
+            - ./storage/app:/var/www/storage/app
+        networks:
+            - guild
+
+    db:
+        image: mysql:8.0
+        container_name: guild-db
+        restart: always
+        environment:
+            MYSQL_DATABASE: guild
+            MYSQL_ROOT_PASSWORD: 123
+        volumes:
+            - ./tmp/db:/var/lib/mysql
+            - ./docker/mysql:/docker-entrypoint-initdb.d
+        ports:
+            - "3361:3306"
+        networks:
+            - guild
+
+    nginx:
+        image: nginx:latest
+        container_name: guild-nginx
+        restart: unless-stopped
+        ports:
+            - "8181:80"
+        volumes:
+            - ./:/var/www
+            - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+        depends_on:
+            - app
+        networks:
+            - guild
+
+networks:
+    guild:

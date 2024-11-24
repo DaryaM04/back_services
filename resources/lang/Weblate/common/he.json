@@ -1,0 +1,120 @@
+{
+  "2": "שתיים",
+  "active": "פעיל",
+  "actions": "פעולות",
+  "alert": {
+    "cancel": "ביטל",
+    "delete": "למחוק",
+    "confirmDelete": "אישור מחיקה",
+    "AreYouSure": "האם אתה באמת רוצה למחוק"
+  },
+  "menu": {
+    "profile": "פרופיל",
+    "logout": "התנתקות",
+    "admin": "מנהל"
+  },
+  "state": {
+    "active": "פעיל",
+    "inactive": "אינו פעיל"
+  },
+  "search": "חיפוש",
+  "show": "הופעה",
+  "elements": {
+    "plural_zero": "הצג רכיבי {{count}}",
+    "plural_one": "הצג רכיב {{count}}",
+    "plural_two": "הצג רכיבי {{count}}",
+    "plural_few": "הצג רכיבי {{count}}",
+    "plural_many": "הצגת רכיבי {{count}}",
+    "plural_other": "הצג רכיבי {{count}}"
+  },
+  "action": {
+    "save": "שמר",
+    "delete": "למחוק",
+    "cancel": "ביטל",
+    "send": "שלח",
+    "back": "גב"
+  },
+  "address": "כתובת",
+  "user_type": {
+    "private": "אדם פרטי",
+    "company": "חברה"
+  },
+  "private_props": {
+    "firstname": "שם פרטי",
+    "lastname": "שם משפחה",
+    "name": "שם",
+    "fullName": "שם משפחה ושם"
+  },
+  "company_props": {
+    "name": "שם החברה"
+  },
+  "select": "בחר...",
+  "image_props": {
+    "upload_file": "העלה קובץ",
+    "orDND": "או גרור ושחרר",
+    "domain": "PNG, JPG, GIF עד 10MB"
+  },
+  "bool": {
+    "true": "נכון",
+    "false": "לא נכון"
+  },
+  "profileTypes": {
+    "user": "משתמש",
+    "company": "חברה"
+  },
+  "userTypes": {
+    "user": "משתמש",
+    "admin": "מנהל מערכת"
+  },
+  "video_props": {
+    "upload_file": "העלה קובץ",
+    "orDND": "או גרור ושחרר",
+    "domain": "MP4, WEBM, AVI, MOV עד 50MB"
+  },
+  "guild": "לבנות גילדה",
+  "userStatus": {
+    "active": "פעיל",
+    "inactive": "אינו פעיל",
+    "blocked": "חסום"
+  },
+  "error": "שגיאה",
+  "city": "עיר",
+  "success": "הצלחה",
+  "yes": "כן",
+  "fileTypeError": "אנא בחר את פורמט הקובץ הנכון: JPEG, PNG, GIF, TIFF, SVG, WebP",
+  "worksheet": {
+    "editWorksheet": "עריכת גליון עבודה",
+    "cityDistrict": "עיר/רובע",
+    "image": "תמונה",
+    "hasBrigadge": "יש בריגדג'",
+    "cityWork": "עיר/רובע לעבודה",
+    "hide": "הסתרת גליון עבודה",
+    "calendar": "לוח שנה",
+    "deleteProfile": "מחיקת פרופיל",
+    "languages": "שפות",
+    "imageHint": "אתה צריך להעלות תמונת תקריב של הפנים שלך. הפנים צריכות להיות במרכז, באיכות טובה, ללא זרים בקרבת מקום.",
+    "hideHint": "הפרופיל שלך יוסתר ממעסיק פוטנציאלי"
+  },
+  "language": {
+    "en": "אנגלית",
+    "ru": "רוסית",
+    "he": "עברית",
+    "ar": "ערבית"
+  },
+  "calendar": {
+    "year": "שנה",
+    "month": "חודש",
+    "hour": "שעה",
+    "hint": "עליך לציין את הימים או המרווחים של הימים שבהם אתה עסוק",
+    "title": "תמיד בחינם",
+    "from": "מ",
+    "until": "עד",
+    "interval": "ציין את מרווח הזמן",
+    "error": "הזן מרווח זמן חוקי"
+  },
+  "m2": "מטר",
+  "chooseClosestCity": "אם לא מצאת את העיר או המחוז שלך ברשימה, ציין את העיר הקרובה ביותר",
+  "languages": "שפות",
+  "phone": "טלפון",
+  "inactive": "אינו פעיל"
+}

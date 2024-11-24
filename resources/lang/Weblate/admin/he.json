@@ -1,0 +1,167 @@
+{
+  "user": {
+    "title": "משתמשים",
+    "edit": "ערוך משתמש",
+    "create": "יצירת משתמש",
+    "delete": "מחיקת משתמש",
+    "add": "הוסף משתמש",
+    "name": "שם מלא או שם חברה",
+    "language": "שפה",
+    "phone": "מספר טלפון",
+    "email": "דואר אלקטרוני",
+    "locale": "אזור",
+    "admin": "מנהל מערכת",
+    "password": "סיסמה",
+    "repeatPassword": "שוב סיסמה",
+    "image": "תמונת פרופיל",
+    "has_brigade": "יש חטיבה?",
+    "administrator": "מנהל מערכת",
+    "enterName": "הזן שם",
+    "uploadFile": "העלה קובץ",
+    "orDragAndDrop": "או גרור ושחרר",
+    "imageProps": "JPG עד 5MB",
+    "role": "תפקיד",
+    "company_name": "שם החברה",
+    "profileType": "סוג פרופיל",
+    "isVerified": "מאומת",
+    "first_name": "שם פרטי",
+    "last_name": "שם משפחה",
+    "cantChangeProfileType": "לא ניתן לשנות את סוג הפרופיל לאחר היצירה",
+    "verified": {
+      "true": "מאומת",
+      "false": "לא אומת",
+      "await": "ממתינים לאישור"
+    },
+    "is_verified": "אימות דרכון",
+    "City": "עיר",
+    "ServiceCategories": "קטגוריות שירות"
+  },
+  "filter": "מסנן",
+  "services": {
+    "title": "שירותים",
+    "add": "הוסף שירות",
+    "delete": "מחיקת שירות",
+    "create": "יצירת שירות",
+    "edit": "עריכת שירות",
+    "name": "שם השירות",
+    "parent": "קטגוריית אב",
+    "enterName": "הזן שם",
+    "selectService": "בחר שירות",
+    "field_name": "שם השירות",
+    "name_ru": "שם השירות ברוסית",
+    "name_he": "שם השירות בעברית",
+    "name_ar": "שם השירות בערבית"
+  },
+  "reviewTypesEnterType": "הזן את סוג הביקורת",
+  "common": {
+    "save": "שמר",
+    "delete": "למחוק"
+  },
+  "dashboard": "דף לוח מחוונים!",
+  "guild": "לבנות גילדה",
+  "menu": {
+    "dashboard": "לוח המחוונים",
+    "cities": "ערים ומחוזות",
+    "users": "משתמשים",
+    "services": "שירותים",
+    "review": "הדעת",
+    "review-type": "סוגי חוות דעת",
+    "approve": "אישור דרכון"
+  },
+  "cities": {
+    "title": "ערים ומחוזות",
+    "add": "הוספת עיר או מחוז",
+    "edit": "עדכון עיר או מחוז",
+    "delete": "מחיקת עיר או מחוז",
+    "enterName": "הזן שם",
+    "name_ru": "שם עיר או מחוז ברוסית",
+    "name_he": "שם עיר או מחוז בעברית",
+    "name_ar": "שם עיר או מחוז בערבית",
+    "name": "שם עיר או מחוז באנגלית",
+    "field_name": "שם"
+  },
+  "reviews": {
+    "title": "הדעת",
+    "add": "הוסף ביקורת"
+  },
+  "table": {
+    "actions": "פעולות",
+    "active": "פעיל"
+  },
+  "reviewTypes": {
+    "title": "סוגי חוות דעת",
+    "headers": {
+      "name": "שם סוג סקירה",
+      "profile_type": "סוג פרופיל",
+      "type": "סוג"
+    },
+    "add": "הוספת סוג סקירה",
+    "edit": "עריכת סוג סקירה",
+    "delete": "מחיקת סוג סקירה",
+    "profile_type": {
+      "user": "משתמש",
+      "company": "חברה",
+      "lawyer": "עורך דין"
+    },
+    "type": {
+      "common": "עבור פרופיל משתמש",
+      "service": "לשירות"
+    },
+    "enterName": "הזן שם",
+    "values": "ערכים לסקירה",
+    "specifyProfileType": "ציין את סוג המשתמש שעבורו תוצג סקירה מסוג זה",
+    "name": "שם סוג סקירה באנגלית",
+    "name_ru": "שם סוג סקירה ברוסית",
+    "name_he": "שם סוג סקירה בעברית",
+    "name_ar": "שם סוג סקירה בערבית",
+    "value_placeholder": {
+      "value": "שם ערך באנגלית",
+      "value_ru": "שם ערך ברוסית",
+      "value_he": "שם ערך בעברית",
+      "value_ar": "שם ערך בערבית"
+    }
+  },
+  "passport": {
+    "company": {
+      "create": "צור דרכון חברה",
+      "name": "שם החברה",
+      "info": "מידע על החברה",
+      "founder_name": "שם המייסד",
+      "founder_id": "מזהה מייסד",
+      "edit": "עריכת דרכון חברה",
+      "approve_title": "אישור דרכון חברה"
+    },
+    "user": {
+      "create": "צור דרכון משתמש",
+      "edit": "עריכת דרכון משתמש",
+      "user_id": "מזהה מערכת משתמש",
+      "uploadImage": "העלה תמונת פספורט",
+      "uploadVideo": "העלה סרטון פספורט",
+      "approve_title": "אישור דרכון אדם",
+      "provided_image": "תמונת פספורט שסופקה",
+      "provided_video": "וידאו דרכון מסופק",
+      "image_not_provided": "תמונת דרכון לא סופקה",
+      "video_not_provided": "סרטון פספורט לא סופק",
+      "name": "שם מלא"
+    },
+    "title": "דרכונים",
+    "tooltip": {
+      "approve": "אישור דרכון",
+      "edit": "עריכת דרכון",
+      "delete": "מחיקת דרכון",
+      "details": "לפרטים נוספים"
+    },
+    "approve": {
+      "comment": "תגובה לאימות דרכון",
+      "youCanLeaveComment": "תגובה"
+    }
+  },
+  "actions": {
+    "title": "פעולות",
+    "cancel": "ביטל",
+    "save": "שמר",
+    "confirm": "לאשר",
+    "approve": "לאשר",
+    "notApprove": "לא לאשר"
+  }
+}

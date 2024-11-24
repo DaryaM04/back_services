@@ -1,0 +1,120 @@
+{
+  "2": "٢",
+  "active": "نشط",
+  "actions": "الاجراءات",
+  "alert": {
+    "cancel": "إلغاء الأمر",
+    "delete": "حذف",
+    "confirmDelete": "تأكيد الحذف",
+    "AreYouSure": "هل تريد حقا حذف"
+  },
+  "menu": {
+    "profile": "ملف تعريف",
+    "logout": "الخروج",
+    "admin": "مدير"
+  },
+  "state": {
+    "active": "نشط",
+    "inactive": "كسلان"
+  },
+  "search": "بحث",
+  "show": "عرض",
+  "elements": {
+    "plural_zero": "إظهار عناصر {{count}}",
+    "plural_one": "إظهار عنصر {{count}}",
+    "plural_two": "إظهار عناصر {{count}}",
+    "plural_few": "إظهار عناصر {{count}}",
+    "plural_many": "إظهار عناصر {{count}}",
+    "plural_other": "إظهار عناصر {{count}}"
+  },
+  "action": {
+    "save": "أنقذ",
+    "delete": "حذف",
+    "cancel": "إلغاء الأمر",
+    "send": "ارسل",
+    "back": "ظهر"
+  },
+  "address": "عنوان",
+  "user_type": {
+    "private": "شخص عادي",
+    "company": "شركة"
+  },
+  "private_props": {
+    "firstname": "الاسم الأول",
+    "lastname": "اسم العائلة",
+    "name": "اسم",
+    "fullName": "اللقب والاسم"
+  },
+  "company_props": {
+    "name": "اسم الشركة"
+  },
+  "select": "اختار...",
+  "image_props": {
+    "upload_file": "تحميل الملف",
+    "orDND": "أو السحب والإفلات",
+    "domain": "PNG و JPG و GIF حتى 10 ميجابايت"
+  },
+  "bool": {
+    "true": "صحيح",
+    "false": "خطأ"
+  },
+  "profileTypes": {
+    "user": "مستخدم",
+    "company": "شركة"
+  },
+  "userTypes": {
+    "user": "مستخدم",
+    "admin": "المشرف"
+  },
+  "video_props": {
+    "upload_file": "تحميل الملف",
+    "orDND": "أو السحب والإفلات",
+    "domain": "MP4 ، WEBM ، AVI ، MOV حتى 50 ميجابايت"
+  },
+  "guild": "بناء النقابة",
+  "userStatus": {
+    "active": "نشط",
+    "inactive": "كسلان",
+    "blocked": "مسدود"
+  },
+  "error": "خطأ",
+  "city": "مدينة",
+  "success": "نجاح",
+  "language": {
+    "en": "الإنكليزية",
+    "ru": "الروسية",
+    "he": "العبرية",
+    "ar": "العربية"
+  },
+  "languages": "اللغات",
+  "yes": "نعم",
+  "fileTypeError": "الرجاء اختيار تنسيق الملف الصحيح: JPEG ، PNG ، GIF ، TIFF ، SVG ، WebP",
+  "chooseClosestCity": "إذا لم تجد مدينتك أو منطقتك في القائمة ، فحدد أقرب مدينة أو منطقة",
+  "calendar": {
+    "year": "سنة",
+    "month": "شهر",
+    "hour": "ساعة",
+    "hint": "تحتاج إلى الإشارة إلى الأيام أو فترات الأيام التي تكون فيها مشغولا",
+    "title": "دائما مجانا",
+    "from": "من",
+    "until": "حتى",
+    "interval": "تحديد الفاصل الزمني",
+    "error": "أدخل فاصلا صالحا"
+  },
+  "m2": "م",
+  "worksheet": {
+    "editWorksheet": "تحرير ورقة العمل",
+    "cityDistrict": "المدينة / الحي",
+    "image": "صورة",
+    "hasBrigadge": "هاس بريجادج",
+    "cityWork": "المدينة / الحي للعمل",
+    "hide": "إخفاء ورقة العمل",
+    "calendar": "تقويم",
+    "deleteProfile": "حذف الملف الشخصي",
+    "languages": "اللغات",
+    "imageHint": "تحتاج إلى تحميل صورة مقربة لوجهك. يجب أن يكون الوجه في الوسط ، بجودة جيدة ، مع عدم وجود غرباء في مكان قريب.",
+    "hideHint": "سيتم إخفاء ملفك الشخصي عن صاحب العمل المحتمل"
+  },
+  "phone": "الهاتف",
+  "inactive": "كسلان"
+}
