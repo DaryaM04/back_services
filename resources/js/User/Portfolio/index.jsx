@@ -55,7 +55,7 @@ const Advice = () => {
       </div>
       <div>
         <AlertHeader className={'text-blue-800'}>
-          {t('portfolio.advice.header')}
+          {t('Максимальное количество портфолио - 10')}
         </AlertHeader>
       </div>
     </Alert>
@@ -75,10 +75,10 @@ const Caution = () => {
       </div>
       <div className={'flex flex-col'}>
         <AlertHeader className={'text-yellow-800'}>
-          {t('portfolio.caution.header')}
+          {t('Предупреждение!')}
         </AlertHeader>
         <AlertText className={'text-yellow-700'}>
-          {t('portfolio.caution.text')}
+          {t('Добавление более 10 портфолио невозможно')}
         </AlertText>
       </div>
     </Alert>
@@ -110,16 +110,18 @@ export default function Index({portfolios, is_exceeded}) {
       id: item.id,
       title: item.service_name,
       subtitle: item.description,
-      image: item.photo
+      image: item.photo,
+      price: item.price,
     }
   })
 
   return (
     <Page>
       <Header>
-        {t('portfolio.Portfolio')}
+        {t('Список портфолио')}
       </Header>
       {console.log(is_exceeded)}
+      {console.log(portfolios)}
       <div className={'mt-3'}>
         <div className={'flex gap-2 justify-between'}>
           <div className={'flex flex-col gap-3 w-full max-w-[583px]'}>
@@ -145,6 +147,9 @@ export default function Index({portfolios, is_exceeded}) {
                     </Link>
                     <h2 className={'mt-2 text-ellipsis text-gray-500 leading-5 text-sm break-all'}>
                       {item.subtitle}
+                    </h2>
+                    <h2 className={'mt-2 text-ellipsis text-gray-500 leading-5 text-sm break-all'}>
+                      {`${item.price}m2`}
                     </h2>
                     <div className={'mt-1 flex justify-end gap-3'}>
                       <Link href={edit_link}>

@@ -16,14 +16,23 @@ import InputError from '@/Components/InputError';
 import {clsx} from "clsx";
 
 export default function EditPortfolio({services, portfolio}){
-    const {data, setData, errors, post, put} = useForm({
+    console.log(services)
+    const {data, setData, errors = {}, post, put} = useForm({
         id: portfolio?.id ?? null,
         description: portfolio?.description ?? '',
         photo: portfolio?.photo ?? null,
         service_id: portfolio?.service_id ?? null,
         service_name: portfolio?.service_name ?? null,
         price: portfolio?.price ?? 0,
+        errors: {},
     });
+
+    console.log('Initial errors:', errors);
+
+    useEffect(() => {
+        console.log('Current errors state:', errors);
+    }, [errors]);
+
     const service = services.map((item) => {
         return{
             id: item.id,
@@ -41,6 +50,9 @@ export default function EditPortfolio({services, portfolio}){
 
     useEffect(()=>{
         setData('service_name', service.find(e => e.id === data.service_id)?.label);
+        console.log('Выбранный service_id:', data.service_id);
+        console.log('Найденный элемент:', service.find((e) => e.id === data.service_id));
+    
     },[data.service_id])
 
     useEffect(() => {
@@ -49,8 +61,38 @@ export default function EditPortfolio({services, portfolio}){
         console.log(data)
     }, [data.description])
 
-    const handleImage = (file) => {
+    const handleImage = async (file) => {
         setData('photo', file)
+        //AJAX запрос для проверки изображения 
+        const formData = new FormData();
+        formData.append('photo', file);
+        console.log(formData);
+        try{
+            const response = await fetch(route('user.portfolio.validate-photo'), {
+                method: 'POST',
+                headres: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                },
+                body: formData,
+            });
+
+            const result = await response.json();
+            if(result.success){
+                const reader = new FileReader();
+                reader.onload = function (ev) {
+                    setImageUrl(ev.target.result);
+                };
+                reader.readAsDataURL(file); 
+                setData('photo', file); //устанавливаем файл после успешной проверки 
+                delete errors.photo
+
+            } else{
+                setImageUrl(null); //убираем файл в случае ошибки
+                console.error(result.message);
+            }
+        } catch (error) {
+            console.error('Ошибка при проверке изображения:', error)
+        }
         const reader = new FileReader();
         reader.onload = function (ev) {
             setImageUrl(ev.target.result);
@@ -58,13 +100,62 @@ export default function EditPortfolio({services, portfolio}){
         reader.readAsDataURL(file);
     }
 
+    const handleTitle = async (selectedOption) => {
+        console.log('Выбранный service_id:', selectedOption.value);
+    
+        // Удаляем ошибку сразу после выбора
+        setData((prevData) => {
+            const { service_name, ...restErrors } = prevData.errors || {};
+            const newState = {
+                ...prevData,
+                service_id: selectedOption.value,
+                service_name: selectedOption.label,
+                errors: restErrors, // Передаём объект без service_name
+            };
+            console.log('New State:' , newState);
+            return newState;
+        });
+
+        // AJAX запрос
+        const formData = new FormData();
+        formData.append('service_id', selectedOption.value);
+    
+        try {
+            const response = await fetch(route('user.portfolio.validate-service_id'), {
+                method: 'POST',
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                },
+                body: formData,
+            });
+    
+            const result = await response.json();
+            console.log(result);
+    
+            if (!result.success) {
+                // Если запрос вернул ошибку, добавляем её
+                setData((prevData) => ({
+                    ...prevData,
+                    errors: {
+                        ...prevData.errors,
+                        service_name: result.message,
+                    },
+                }));
+            }
+        } catch (error) {
+            console.error('Ошибка при проверке услуги:', error);
+        }
+    };
+
     const handleSave = () => {
-        
-        if(!data.id)
+        console.log('Данные перед отправкой:', data);
+    
+        if (!data.id) {
             post(route('user.portfolio.store'), data);
-        else
-            router.post(route("user.portfolio.update", data.id), {...data, _method: "put"});
-    }
+        } else {
+            router.post(route('user.portfolio.update', data.id), { ...data, _method: 'put' });
+        }
+    };
 
     const {t} = useTranslation(['common', 'user']);
 
@@ -83,9 +174,7 @@ export default function EditPortfolio({services, portfolio}){
                         placeholder={t('select')}
                         options={service}
                         value={service.find(e => e.id === data.service_id)}
-                        onChange={function(e){
-                            setData('service_id', e.id);
-                        }}
+                        onChange={(selectedOption) => handleTitle(selectedOption)}
                         className={clsx("flex-1 shadow-sm block mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 border-gray-300 rounded-md", errors.service_name && 'border rounded-lg border-red-500')}
                         styles={{
                             input: base => ({
@@ -115,6 +204,8 @@ export default function EditPortfolio({services, portfolio}){
                     <AvatarDropzone 
                         handleFile={handleImage}
                         image={imageUrl}
+                        // value={ csrf_token() }
+                       
                     />
                     <InputError message={errors.photo} className="mt-2"/>
                 </ValueCell>
@@ -136,6 +227,7 @@ export default function EditPortfolio({services, portfolio}){
                         <span className='text-xl ltr:ml-2 rtl:mr-2'>&#8362;</span>
                     </div>
                 </ValueCell>
+                
             </FormTable>
             <ActionsContainer>
                     <CancelButton label={t('action.cancel')} onClick={() => {router.get(route('user.portfolio.index'))}}></CancelButton>

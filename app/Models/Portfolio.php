@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Portfolio extends Model
 {
     use HasFactory;
+    
 
     protected $fillable = [
         'user_id',
@@ -19,4 +20,17 @@ class Portfolio extends Model
         'service_id',
         'service_name',
     ];
+
+     //связь с моделью услуги
+     public function service()
+     {
+         return $this->belongsTo(Service::class, 'user_id', 'id');
+     }
+ 
+     //связь с моделью пользователя
+     public function user()
+     {
+         return $this->belongsTo(User::class,  'service_id', 'id');
+     }
+ 
 }

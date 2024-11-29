@@ -44,7 +44,7 @@ class MenuService
             'rates' => ['name' => __('menu.rates'), 'href' => route('user.dashboard'), 'icon' => 'RatesIcon'],
             'myContracts' => ['name' => __('menu.myContracts'), 'href' => route('user.dashboard'), 'icon' => 'MyContractsIcon'],
             'projectSearch' => ['name' => __('menu.projectSearch'), 'href' => route('user.projectsearch'), 'icon' => 'ProjectSearchIcon'],
-            'servicesAndWorkingConditions' => ['name' => __('menu.servicesAndWorkingConditions'), 'href' => route('user.services'), 'icon' => 'ServicesAndWorkingConditionsIcon'],
+            'servicesAndWorkingConditions' => ['name' => __('menu.servicesAndWorkingConditions'), 'href' => route('user.services.index'), 'icon' => 'ServicesAndWorkingConditionsIcon'],
             'portfolio' => ['name' => __('menu.portfolio'), 'href' => route('user.portfolio.index'), 'icon' => 'PortfolioIcon'],
             'employeeSearch' => ['name' => __('menu.employeeSearch'), 'href' => route('user.dashboard'), 'icon' => 'EmployeeSearchIcon'],
             'myProjects' => ['name' => __('menu.myProjects'), 'href' => route('user.dashboard'), 'icon' => 'MyProjectsIcon'],

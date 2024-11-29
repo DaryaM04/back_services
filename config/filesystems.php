@@ -55,6 +55,12 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
         ],
+        'custom' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/portfolio'), //путь для сохранения 
+            'url' => env('APP_URL') . '/storage/portfolio', //url для доступа
+            'visibility' => 'public'
+        ],
 
     ],
 

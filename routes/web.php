@@ -14,7 +14,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ReviewController;
 use App\Http\Controllers\User\PortfolioController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\UserServiceController;
+use App\Http\Controllers\User\UserServiceController;
 use App\Http\Controllers\User\ProfileController;
 use App\Http\Middleware\PassportFilesMiddleware;
 use Illuminate\Foundation\Application;
@@ -67,6 +67,23 @@ Route::middleware(PassportFilesMiddleware::class)->group(function () {
 // private routes
 // ****************************
 
+Route::middleware(['auth', 'verified'])->name('user.')->prefix('user')->group(function () {
+    // общий список сервисов
+    Route::get('/services', [UserServiceController::class, 'index'])->name('services.index');
+
+    // Сохранение
+    Route::post('/service', [UserServiceController::class, 'store'])->name('service.store');
+
+    // Страница редактирования сервиса
+    Route::get('/service/{id}/edit', [UserServiceController::class, 'edit'])->name('service.edit');
+
+    // Обновление сервиса
+    Route::put('/service/{id}', [UserServiceController::class, 'update'])->name('service.update');
+
+    // Удаление сервиса
+    Route::delete('/service/{id}', [UserServiceController::class, 'destroy'])->name('service.destroy');
+});
+
 Route::middleware(['auth', 'verify_phone', 'after_verify'])->group(function () {
 
     // user's part
@@ -99,22 +116,37 @@ Route::middleware(['auth', 'verify_phone', 'after_verify'])->group(function () {
         Route::post('/profile/passport', [ProfileController::class, 'storePassport']);
             // ->name('passport');
 
+         // Добавляем маршрут для отображения списка сервисов
+        Route::get('/services', [UserServiceController::class, 'index'])->name('services.index');
 
-        // Маршруты для  SERVICES
-        //главная страница сервисы
-        Route::get('/services', function () {
-            return Inertia::render('User/Services');
-        })->name('services');
+        // Созлание
+        Route::get('/services/create', [UserServiceController::class, 'create'])->name('services.create');
 
-        //страница создания сервиса
-        Route::get('/services/create', function () {
-            return Inertia::render('User/EditService');
-        })->name('services.create');
+        // Страница редактирования сервиса
+        Route::get('/services/{service}/edit', [UserServiceController::class, 'edit'])->name('services.edit');
 
-        //страница редактирования сервиса
-        Route::get('/services/update', function () {
-            return Inertia::render('User/EditService');
-        })->name('services.edit');
+        //сохранение
+        Route::post('/services', [UserServiceController::class, 'store'])->name('user.services.store');
+
+        // Обновление сервиса
+        Route::patch('/services/{service}', [UserServiceController::class, 'update'])->name('services.update');
+
+        // Удаление сервиса
+        Route::delete('/services/{service}', [UserServiceController::class, 'destroy'])->name('services.destroy');
+
+
+        //Маршруты для отображения списка портфолио
+        Route::get('/portfolio/index', [PortfolioController::class, 'index'])->name('portfolio');
+
+        // Создание портфолио
+        Route::get('/portfolio/create', [PortfolioController::class, 'create'])->name('portfolio.create');
+        
+        // AJAX для фото
+        Route::post('portfolio/validate-photo', [PortfolioController::class, 'validatePhoto'])->name('portfolio.validate-photo');
+
+        // AJAX для title
+        Route::post('portfolio/validate-service_id', [PortfolioController::class, 'validateTitle'])->name('portfolio.validate-service_id');
+
 
     });
 

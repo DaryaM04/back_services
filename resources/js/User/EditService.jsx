@@ -1,4 +1,4 @@
-import {Head, router, useForm} from '@inertiajs/react';
+import {Head, router, useForm,} from '@inertiajs/react';
 import Select from "react-select";
 import {
 	OptionItemCheckboxField,
@@ -17,8 +17,11 @@ import {FormTable} from "@/Components/Form/FormTable.jsx";
 import {CaptionCell} from "@/Components/Form/CaptionCell.jsx";
 import {ValueCell} from "@/Components/Form/ValueCell.jsx";
 import {clsx} from "clsx";
+import { fromJSON } from 'postcss';
 
 export default function EditService({userService, services}) {
+	// console.log(userService);
+	// console.log(services);
 
 	const {t} = useTranslation(["user", "common"])
 
@@ -30,10 +33,23 @@ export default function EditService({userService, services}) {
 		is_active: userService?.is_active ?? false,
 		hourly_payment: formatMoney(userService?.hourly_payment) ?? "",
 		work_payment: formatMoney(userService?.work_payment) ?? "",
-		is_picked: userService?.is_picked ?? false,
 	})
 
-	const isPicked = data.is_by_agreement || data.is_hourly_type || data.is_work_type;
+	useEffect(() => {
+		if (userService) {
+		  setData({
+			service_id: userService.service_id ?? null,
+			is_by_agreement: userService.is_by_agreement ?? false,
+			is_hourly_type: userService.is_hourly_type ?? false,
+			is_work_type: userService.is_work_type ?? false,
+			is_active: userService.is_active ?? false,
+			hourly_payment: formatMoney(userService.hourly_payment) ?? null,
+			work_payment: formatMoney(userService.work_payment) ?? null,
+		  });
+		}
+	  }, [userService]);
+	
+
 	const currentUrl = window.location.href;
 	const isCreating = currentUrl.includes('create');
 	const yearOrMonth = [
@@ -49,34 +65,44 @@ export default function EditService({userService, services}) {
 		}
 	))
 
-	const submit = (e) => {
+	const submit = async (e) => {
+		e.preventDefault(); 
 		if (userService?.id) {
-			put(route("user.services.update", userService.id));
+			console.log('Updating service:', data);
+			router.put(route("user.service.update", userService.id),{...data, _method: "put"});
+			console.log('Updating service:', data);
+			setData({...data});
 		} else {
-			post(route("user.services.store"));
+			router.post(route("user.service.store"), data);
+			console.log('Create service:', data);
+			setData({...data});
 		}
 	}
 
-	useEffect(() => {
-		setData('is_picked', isPicked)
-	}, [data.is_work_type, data.is_hourly_type, data.is_by_agreement]);
+	console.log('Current form data:', data);
+	
+
+
+	// useEffect(() => {
+	// 	setData('is_picked', isPicked)
+	// }, [data.is_work_type, data.is_hourly_type, data.is_by_agreement]);
 
 	return (<>
 		<Head title="Edit Service"/>
 		<Page>
 			<Header className='my-12'>
-				{isCreating ? t("services.edit.creating") : t("services.edit.editing")}
+				{isCreating ? t("Создание услуги") : t("Редактирование услуги")}
 			</Header>
 			<FormTable>
 				{/*Наименование услуги*/}
 				<CaptionCell>
 					<OptionItemNameWithError error={errors.service_id}>
-						{t("services.edit.serviceName") + ' *'}
+						{t("Выберите услугу") + ' *'}
 					</OptionItemNameWithError>
 				</CaptionCell>
 				<ValueCell>
 					<Select
-						placeholder={t("services.edit.chooseService") + "..."}
+						placeholder={t("Наименование услуги") + "..."}
 						value={options?.find(service => service.id === data.service_id)}
 						options={options}
 						className={clsx("flex-1 w-full md:w-[450px] shadow-sm block mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 border-gray-300 rounded-md", errors.service_id && 'border rounded-lg border-red-500')}
@@ -98,7 +124,7 @@ export default function EditService({userService, services}) {
 				{/* Тип и сумма оплаты */}
 				<CaptionCell>
 					<OptionItemNameWithError error={errors.is_picked || errors.hourly_payment}>
-						{t("services.edit.paymentAmount.title")} *
+						{t("Условия оплаты")} *
 					</OptionItemNameWithError>
 				</CaptionCell>
 				<ValueCell>
@@ -107,7 +133,7 @@ export default function EditService({userService, services}) {
 						<CheckboxContainer>
 							<OptionItemCheckboxField
 								checked={data.is_by_agreement}
-								label={t("services.edit.paymentAmount.byAgreement")}
+								label={t("По договоренности")}
 								onChange={(e) => {
 									setData("is_by_agreement", e)
 								}}/>
@@ -116,7 +142,7 @@ export default function EditService({userService, services}) {
 						<CheckboxContainer>
 							<OptionItemCheckboxField
 								checked={data.is_hourly_type}
-								label={t("services.edit.paymentAmount.hourlyPayment")}
+								label={t("Почасовая оплата")}
 								onChange={(e) => {
 									setData("is_hourly_type", e)
 								}}/>
@@ -125,10 +151,10 @@ export default function EditService({userService, services}) {
 								                            min={0}
 								                            className={`${errors.hourly_payment ? 'border-red-500' : ''} disabled:bg-gray-50`}
 								                            disabled={!data.is_hourly_type}
-								                            onChange={v => {
-									                            setData("hourly_payment", v)
+								                            onChange={(e) => {
+									                            setData("hourly_payment", e)
 								                            }}/>
-								<div className='w-28 ms-4'>₪/{t("common:calendar.hour")}</div>
+								<div className='w-28 ms-4'>{t("common:р/час")}</div>
 							</div>
 						</CheckboxContainer>
 						<OptionItemErrorText errorText={errors.hourly_payment}/>
@@ -136,7 +162,7 @@ export default function EditService({userService, services}) {
 						<CheckboxContainer>
 							<OptionItemCheckboxField
 								checked={data.is_work_type}
-								label={t("services.edit.paymentAmount.paymentByVolume")}
+								label={t("По объему выполненной работы")}
 								onChange={(e) => {
 									setData("is_work_type", e)
 								}}/>
@@ -151,7 +177,7 @@ export default function EditService({userService, services}) {
 								                            onChange={(e) => {
 									                            setData("work_payment", e)
 								                            }}/>
-								<div className='w-28 ms-4'>₪/{t("common:m2")}
+								<div className='w-28 ms-4'>р/{t("common:м")}
 									<sup>
 										{t("common:2")}
 									</sup>
@@ -165,18 +191,18 @@ export default function EditService({userService, services}) {
 				{/*Активность*/}
 				<CaptionCell>
 					<OptionItemNameWithError>
-						{t("services.edit.activity")}
+						{t("Статус активности:")}
 					</OptionItemNameWithError>
 				</CaptionCell>
 				<ValueCell>
-					<OptionItemSwitchField value={data.is_active} onChange={e => setData("is_active", e)}/>
+					<OptionItemSwitchField value={data.is_active} onChange={(e) => setData("is_active", e)}/>
 				</ValueCell>
 			</FormTable>
 			{/* Блок с кнопками */}
 			<ActionsContainer className='items-end'>
-				<CancelButton className='' label={t('common:action.cancel')}
+				<CancelButton className='' label={t('common:ОТМЕНА')}
 				              onClick={() => router.get(route('user.services.index'))}/>
-				<ActionButton className='' label={t("common:action.save")}
+				<ActionButton className='' label={t("common:СОХРАНИТЬ")}
 				              onClick={submit}/>
 			</ActionsContainer>
 		</Page>

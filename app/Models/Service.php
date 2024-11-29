@@ -37,4 +37,16 @@ class Service extends Model
             'name' => $name
         ];
     }
+
+    public function userServices()
+    {
+        return $this->hasMany(UserService::class);
+    }
+
+    public function Portfolio()
+    {
+        return $this->hasMany(Portfolio::class);
+    }
 }
+
+

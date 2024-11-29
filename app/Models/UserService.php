@@ -10,18 +10,29 @@ class UserService extends Model
 {
     use HasFactory;
 
+    protected $table = 'user_services';
+    protected $primaryKey = 'id';
+
     protected $fillable = [
+        'service_id', 'user_id',
         'is_by_agreement',
         'is_hourly_type',
         'is_work_type',
         'hourly_payment',
         'work_payment',
         'is_active',
-        'user_id', 'service_id',
     ];
 
-    public function service(): BelongsTo
+    //связь с моделью услуги
+    public function service()
     {
-        return $this->belongsTo(Service::class, 'service_id');
+        return $this->belongsTo(Service::class);
     }
+
+    //связь с моделью пользователя
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }

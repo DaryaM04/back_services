@@ -99,4 +99,15 @@ class User extends Authenticatable
         return $this->morphTo();
     }
 
+    public function userServices()
+    {
+        return $this->hasMany(UserService::class);
+    }
+
+    public function portfolio()
+    {
+        return $this->hasMany(Portfolio::class);
+    }
+
 }
+
